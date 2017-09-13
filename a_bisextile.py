@@ -17,7 +17,10 @@ import os #Module qui va importer une fonction pour permettre d'afficher le prog
 #Déterminer si une année saisie par l'utilisateur est bissextile.
 
 u_a = input("Ecrivez une année pour savoir si celle-ci est bisextile ou non"" ") #L'utilisateur rentre une année
-A = int(u_a)
+try:
+	A = int(u_a)
+except:
+	print("Veuillez resaisir une année correcte SVP.")
 
 if A%400 == 0 or (A%100 != 0 and A%4 == 0) : #Si l'année est un multiple de 4 et pas de 100 ou bien qu'elle est un multiple de 400, elle est bisextile
     print("L'année est bisextile.")
