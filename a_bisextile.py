@@ -1,6 +1,9 @@
 # -*-coding:Latin-1 -*
+#Code pour afficher les accents sur windows
 
-#***ANNEE BISEXTILE***
+import os #Module qui va importer une fonction pour permettre d'afficher le programme sur windows d'un double clic 
+
+#***ANNEE BISEXTILE*** 
 
 #***************************************
 
@@ -22,3 +25,4 @@ if A%400 == 0 or (A%100 != 0 and A%4 == 0) : #Si l'année est un multiple de 4 e
 else: #Sinon elle n'est pas bisextile 
     print("L'année nest pas bisextile") 
 
+os.system("pause")
